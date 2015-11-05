@@ -2,6 +2,8 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
+obj/
+bin/
 [Bb]in
 [Ob]bj
 *.suo
