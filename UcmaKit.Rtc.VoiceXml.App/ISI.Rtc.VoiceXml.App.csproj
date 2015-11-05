@@ -4,17 +4,18 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8151D34D-9C6C-4541-91B5-820C23EF9D2F}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{31BA5546-2CC4-48DC-BD43-8CC095FAAFAC}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ISI.Rtc.VoiceXml</RootNamespace>
-    <AssemblyName>ISI.Rtc.VoiceXml</AssemblyName>
+    <RootNamespace>ISI.Rtc.VoiceXml.App</RootNamespace>
+    <AssemblyName>ISI.Rtc.VoiceXml.App</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,6 +25,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -32,13 +34,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Rtc.Collaboration, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
-    <Reference Include="Microsoft.Rtc.Collaboration.AudioVideo.VoiceXml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
-    <Reference Include="Microsoft.Speech, Version=11.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
-    <Reference Include="Microsoft.Speech.VoiceXml, Version=11.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Threading.Tasks">
       <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
     </Reference>
@@ -58,36 +53,35 @@
       <HintPath>..\packages\Nito.AsyncEx.1.0.0\lib\net45\Nito.AsyncEx.Enlightenment.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Net" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UnhandledDisconnectException.cs" />
-    <Compile Include="UnhandledPageThrowException.cs" />
-    <Compile Include="VoiceXmlApplication.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ISI.Rtc.Util\ISI.Rtc.Util.csproj">
-      <Project>{55a21f94-8a1e-4b86-922c-8a9a3ed63e89}</Project>
-      <Name>ISI.Rtc.Util</Name>
+    <ProjectReference Include="..\UcmaKit.Rtc.VoiceXml.Core\ISI.Rtc.VoiceXml.Service.csproj">
+      <Project>{4bd7613a-5207-4bc9-9c53-d033245acfdd}</Project>
+      <Name>ISI.Rtc.VoiceXml.Service</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ISI.Rtc.VoiceXml.Data\ISI.Rtc.VoiceXml.Data.csproj">
+    <ProjectReference Include="..\UcmaKit.Rtc.VoiceXml.Data\ISI.Rtc.VoiceXml.Data.csproj">
       <Project>{dc6d7815-511f-49ec-8fe8-48f96e44fd6b}</Project>
       <Name>ISI.Rtc.VoiceXml.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ISI.Rtc\ISI.Rtc.csproj">
+    <ProjectReference Include="..\UcmaKit.Rtc.VoiceXml\ISI.Rtc.VoiceXml.csproj">
+      <Project>{8151d34d-9c6c-4541-91b5-820c23ef9d2f}</Project>
+      <Name>ISI.Rtc.VoiceXml</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UcmaKit.Rtc\ISI.Rtc.csproj">
       <Project>{8dd80684-381c-468b-96f1-1a6f6b1733b8}</Project>
       <Name>ISI.Rtc</Name>
     </ProjectReference>

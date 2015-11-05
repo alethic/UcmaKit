@@ -62,11 +62,11 @@
     <Compile Include="QueueHoldConference.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ISI.Rtc.Util\ISI.Rtc.Util.csproj">
+    <ProjectReference Include="..\UcmaKit.Rtc.Util\ISI.Rtc.Util.csproj">
       <Project>{55a21f94-8a1e-4b86-922c-8a9a3ed63e89}</Project>
       <Name>ISI.Rtc.Util</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ISI.Rtc\ISI.Rtc.csproj">
+    <ProjectReference Include="..\UcmaKit.Rtc\ISI.Rtc.csproj">
       <Project>{8dd80684-381c-468b-96f1-1a6f6b1733b8}</Project>
       <Name>ISI.Rtc</Name>
     </ProjectReference>

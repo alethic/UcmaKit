@@ -75,23 +75,23 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ISI.Rtc.Acd.Service\ISI.Rtc.Acd.Service.csproj">
+    <ProjectReference Include="..\UcmaKit.Rtc.Acd.Service\ISI.Rtc.Acd.Service.csproj">
       <Project>{105bc605-86c2-463f-afe3-a68e601da292}</Project>
       <Name>ISI.Rtc.Acd.Service</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ISI.Rtc.Acd\ISI.Rtc.Acd.csproj">
+    <ProjectReference Include="..\UcmaKit.Rtc.Acd\ISI.Rtc.Acd.csproj">
       <Project>{8597bb98-0432-4da9-af8f-b0b212e07634}</Project>
       <Name>ISI.Rtc.Acd</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ISI.Rtc.Service\ISI.Rtc.Service.csproj">
+    <ProjectReference Include="..\UcmaKit.Rtc.Service\ISI.Rtc.Service.csproj">
       <Project>{8177e927-5f4e-4d0e-ac1c-390d2980b3d3}</Project>
       <Name>ISI.Rtc.Service</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ISI.Rtc.Util\ISI.Rtc.Util.csproj">
+    <ProjectReference Include="..\UcmaKit.Rtc.Util\ISI.Rtc.Util.csproj">
       <Project>{55a21f94-8a1e-4b86-922c-8a9a3ed63e89}</Project>
       <Name>ISI.Rtc.Util</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ISI.Rtc\ISI.Rtc.csproj">
+    <ProjectReference Include="..\UcmaKit.Rtc\ISI.Rtc.csproj">
       <Project>{8dd80684-381c-468b-96f1-1a6f6b1733b8}</Project>
       <Name>ISI.Rtc</Name>
     </ProjectReference>

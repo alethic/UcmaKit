@@ -81,7 +81,7 @@
     <Compile Include="RtcApplicationConfigurationElement.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ISI.Rtc.Util\ISI.Rtc.Util.csproj">
+    <ProjectReference Include="..\UcmaKit.Rtc.Util\ISI.Rtc.Util.csproj">
       <Project>{55a21f94-8a1e-4b86-922c-8a9a3ed63e89}</Project>
       <Name>ISI.Rtc.Util</Name>
     </ProjectReference>

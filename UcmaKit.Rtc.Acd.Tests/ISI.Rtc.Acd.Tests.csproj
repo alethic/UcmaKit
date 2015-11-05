@@ -56,7 +56,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ISI.Rtc.Acd\ISI.Rtc.Acd.csproj">
+    <ProjectReference Include="..\UcmaKit.Rtc.Acd\ISI.Rtc.Acd.csproj">
       <Project>{8597bb98-0432-4da9-af8f-b0b212e07634}</Project>
       <Name>ISI.Rtc.Acd</Name>
     </ProjectReference>

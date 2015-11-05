@@ -4,18 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{31BA5546-2CC4-48DC-BD43-8CC095FAAFAC}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{105BC605-86C2-463F-AFE3-A68E601DA292}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ISI.Rtc.VoiceXml.App</RootNamespace>
-    <AssemblyName>ISI.Rtc.VoiceXml.App</AssemblyName>
+    <RootNamespace>ISI.Rtc.Acd.Service</RootNamespace>
+    <AssemblyName>ISI.Rtc.Acd.Service</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,27 +22,36 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>x64</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ISI.Rtc.Acd.Service.AcdService</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Threading.Tasks">
+    <Reference Include="Microsoft.Rtc.Collaboration, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Rtc.Collaboration.AudioVideo.VoiceXml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Threading.Tasks.Extensions">
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop">
       <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
     </Reference>
-    <Reference Include="Nito.AsyncEx">
+    <Reference Include="Nito.AsyncEx, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Nito.AsyncEx.1.0.0\lib\net45\Nito.AsyncEx.dll</HintPath>
     </Reference>
     <Reference Include="Nito.AsyncEx.Concurrent">
@@ -53,38 +61,64 @@
       <HintPath>..\packages\Nito.AsyncEx.1.0.0\lib\net45\Nito.AsyncEx.Enlightenment.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
     <Reference Include="System.Net" />
+    <Reference Include="System.Reactive.Core">
+      <HintPath>..\packages\Rx-Core.2.1.30214.0\lib\Net45\System.Reactive.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces">
+      <HintPath>..\packages\Rx-Interfaces.2.1.30214.0\lib\Net45\System.Reactive.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Linq">
+      <HintPath>..\packages\Rx-Linq.2.1.30214.0\lib\Net45\System.Reactive.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AcdInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AcdService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AcdService.Designer.cs">
+      <DependentUpon>AcdService.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UcmaKit.Rtc.Acd\ISI.Rtc.Acd.csproj">
+      <Project>{8597bb98-0432-4da9-af8f-b0b212e07634}</Project>
+      <Name>ISI.Rtc.Acd</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UcmaKit.Rtc.Service\ISI.Rtc.Service.csproj">
+      <Project>{8177e927-5f4e-4d0e-ac1c-390d2980b3d3}</Project>
+      <Name>ISI.Rtc.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UcmaKit.Rtc.Util\ISI.Rtc.Util.csproj">
+      <Project>{55a21f94-8a1e-4b86-922c-8a9a3ed63e89}</Project>
+      <Name>ISI.Rtc.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UcmaKit.Rtc\ISI.Rtc.csproj">
+      <Project>{8dd80684-381c-468b-96f1-1a6f6b1733b8}</Project>
+      <Name>ISI.Rtc</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ISI.Rtc.VoiceXml.Core\ISI.Rtc.VoiceXml.Service.csproj">
-      <Project>{4bd7613a-5207-4bc9-9c53-d033245acfdd}</Project>
-      <Name>ISI.Rtc.VoiceXml.Service</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ISI.Rtc.VoiceXml.Data\ISI.Rtc.VoiceXml.Data.csproj">
-      <Project>{dc6d7815-511f-49ec-8fe8-48f96e44fd6b}</Project>
-      <Name>ISI.Rtc.VoiceXml.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ISI.Rtc.VoiceXml\ISI.Rtc.VoiceXml.csproj">
-      <Project>{8151d34d-9c6c-4541-91b5-820c23ef9d2f}</Project>
-      <Name>ISI.Rtc.VoiceXml</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ISI.Rtc\ISI.Rtc.csproj">
-      <Project>{8dd80684-381c-468b-96f1-1a6f6b1733b8}</Project>
-      <Name>ISI.Rtc</Name>
-    </ProjectReference>
+    <EmbeddedResource Include="AcdService.resx">
+      <DependentUpon>AcdService.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />

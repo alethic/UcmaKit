@@ -56,11 +56,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ISI.Rtc.Queue\ISI.Rtc.Queue.csproj">
+    <ProjectReference Include="..\UcmaKit.Rtc.Queue\ISI.Rtc.Queue.csproj">
       <Project>{d61d67ee-5ce2-46a3-8ee7-61805474cd1a}</Project>
       <Name>ISI.Rtc.Queue</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ISI.Rtc\ISI.Rtc.csproj">
+    <ProjectReference Include="..\UcmaKit.Rtc\ISI.Rtc.csproj">
       <Project>{8dd80684-381c-468b-96f1-1a6f6b1733b8}</Project>
       <Name>ISI.Rtc</Name>
     </ProjectReference>
