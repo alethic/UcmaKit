@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<vxml
+    xmlns="http://www.w3.org/2001/vxml"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.w3.org/2001/vxml ../Schema/vxml.xsd"
+    xml:lang="en-US"
+    version="2.0">
+
+    <property
+        name="inputmodes"
+        value="dtmf"/>
+
+    <menu
+        id="menu"
+        dtmf="true">
+        <prompt>
+            <audio src="Media/Closed.wav">
+                Thank you for calling Institution Solutions.
+                Our office is currently closed.
+                For office hours, please say hours or press 1.
+                To leave a message, please say message or press 2 and a representative will return your call as soon as possible.
+                Thank you.
+            </audio>
+            <!--If you would like to access the company directory please say directory or press 3. -->
+        </prompt>
+        <choice
+            next="#hours"
+            dtmf="1">
+            hours
+        </choice>
+        <choice
+            next="#message"
+            dtmf="2">
+            message
+        </choice>
+        <choice
+            next="#directory"
+            dtmf="3">
+            directory
+        </choice>
+        <noinput>
+            <prompt>
+                I didn't catch that.
+            </prompt>
+            <goto
+                next="#menu" />
+        </noinput>
+        <nomatch>
+            <prompt>
+                That wasn't a valid option.
+            </prompt>
+            <goto
+                next="#menu" />
+        </nomatch>
+    </menu>
+
+    <menu
+        id="hours"
+        dtmf="true">
+        <prompt>
+            <audio src="Media/Hours.wav">
+                Our office hours are Monday through Friday, 8:00 AM to 5:00 PM Central Time.
+                If you have reached this message during office hours all lines are currently busy.
+                If you would like to leave a message please say message or press 1 and we will return your call as soon as possible.
+            </audio>
+          <!--  If you would like to access the company directory please say directory or press 2. -->
+        </prompt>
+        <choice
+            next="#message"
+            dtmf="1">
+            message
+        </choice>
+        <choice
+            next="#directory"
+            dtmf="2">
+            directory
+        </choice>
+        <noinput>
+            <prompt>
+                I didn't catch that.
+            </prompt>
+            <goto
+                next="#hours" />
+        </noinput>
+        <nomatch>
+            <prompt>
+                That wasn't a valid option.
+            </prompt>
+            <goto
+                next="#hours" />
+        </nomatch>
+    </menu>
+
+    <form id="message">
+        <var
+            name="callerid"
+            expr="session.callerid" />
+        <block>
+            <prompt>
+                <audio src="Media/Message.wav">
+                    At the tone please leave your name and contact information and a representative will return your call as soon as possible.
+                    When finished recording please press the pound key.
+                </audio>
+            </prompt>
+        </block>
+        <record
+            name="message"
+            beep="true"
+            dtmfterm="true"
+            maxtime="60s"
+            finalsilence="4000ms"
+            type="audio/x-wav">
+            <noinput>
+                <prompt>
+                    I didn't hear anything. Please try again.
+                </prompt>
+                <goto
+                    next="#message" />
+            </noinput>
+            <filled>
+                <submit
+                    next="Message.ashx?n=message.wmv&amp;t=audio/x-ms-wma&amp;r=app-root.vxml#message-end"
+                    method="post"
+                    enctype="multipart/form-data"
+                    namelist="message callerid" />
+            </filled>
+        </record>
+    </form>
+
+    <form id="message-end">
+        <block>
+            <prompt>
+                Your message has been sent.
+                We will get back to you as soon as possible.
+                Thank you.
+            </prompt>
+        </block>
+    </form>
+
+    <form id="directory">
+        <transfer
+            type="blind"
+            dest="sip:AutoAttendant.DefaultUM.ad.isillc.com@isillc.com" />
+    </form>
+
+</vxml>
