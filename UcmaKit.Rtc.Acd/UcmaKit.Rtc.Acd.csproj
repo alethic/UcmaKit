@@ -4,18 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C49E66BB-6EA3-4A14-973A-BFB218E2AEDA}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{8597BB98-0432-4DA9-AF8F-B0B212E07634}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ISI.Rtc.Acd.App</RootNamespace>
-    <AssemblyName>ISI.Rtc.Acd.App</AssemblyName>
+    <RootNamespace>ISI.Rtc.Acd</RootNamespace>
+    <AssemblyName>ISI.Rtc.Acd</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -25,7 +24,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>x64</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -47,8 +45,7 @@
     <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop">
       <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
     </Reference>
-    <Reference Include="Nito.AsyncEx, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Nito.AsyncEx">
       <HintPath>..\packages\Nito.AsyncEx.1.0.0\lib\net45\Nito.AsyncEx.dll</HintPath>
     </Reference>
     <Reference Include="Nito.AsyncEx.Concurrent">
@@ -58,43 +55,71 @@
       <HintPath>..\packages\Nito.AsyncEx.1.0.0\lib\net45\Nito.AsyncEx.Enlightenment.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Net" />
+    <Reference Include="System.Reactive.Core">
+      <HintPath>..\packages\Rx-Core.2.1.30214.0\lib\Net45\System.Reactive.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces">
+      <HintPath>..\packages\Rx-Interfaces.2.1.30214.0\lib\Net45\System.Reactive.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Linq">
+      <HintPath>..\packages\Rx-Linq.2.1.30214.0\lib\Net45\System.Reactive.Linq.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="AcdActionResultStatus.cs" />
+    <Compile Include="AcdContact.cs" />
+    <Compile Include="AcdApplication.cs" />
+    <Compile Include="AcdContactTransfer.cs" />
+    <Compile Include="AcdActionResult.cs" />
+    <Compile Include="AcdCascade.cs" />
+    <Compile Include="AcdCascadeLevel.cs" />
+    <Compile Include="AcdContext.cs" />
+    <Compile Include="AcdDelay.cs" />
+    <Compile Include="AcdHoldAudio.cs" />
+    <Compile Include="AcdMultiDelegate.cs" />
+    <Compile Include="AcdHoldContext.cs" />
+    <Compile Include="AcdHold.cs" />
+    <Compile Include="AcdAction.cs" />
+    <Compile Include="AcdRemoteEndpoint.cs" />
+    <Compile Include="AcdTransfer.cs" />
+    <Compile Include="AcdRepeat.cs" />
+    <Compile Include="AcdParallel.cs" />
+    <Compile Include="AcdSchedule.cs" />
+    <Compile Include="AcdDelegate.cs" />
+    <Compile Include="AcdTimeout.cs" />
+    <Compile Include="AcdTimeRange.cs" />
+    <Compile Include="AcdAllowSchedule.cs" />
+    <Compile Include="AcdSerial.cs" />
+    <Compile Include="AcdDebug.cs" />
+    <Compile Include="AcdWeekSchedule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config">
-      <SubType>Designer</SubType>
-    </None>
+    <EmbeddedResource Include="Audio\Lync.wma" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\UcmaKit.Rtc.Acd.Service\ISI.Rtc.Acd.Service.csproj">
-      <Project>{105bc605-86c2-463f-afe3-a68e601da292}</Project>
-      <Name>ISI.Rtc.Acd.Service</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\UcmaKit.Rtc.Acd\ISI.Rtc.Acd.csproj">
-      <Project>{8597bb98-0432-4da9-af8f-b0b212e07634}</Project>
-      <Name>ISI.Rtc.Acd</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\UcmaKit.Rtc.Service\ISI.Rtc.Service.csproj">
-      <Project>{8177e927-5f4e-4d0e-ac1c-390d2980b3d3}</Project>
-      <Name>ISI.Rtc.Service</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\UcmaKit.Rtc.Util\ISI.Rtc.Util.csproj">
+    <ProjectReference Include="..\UcmaKit.Rtc.Util\UcmaKit.Rtc.Util.csproj">
       <Project>{55a21f94-8a1e-4b86-922c-8a9a3ed63e89}</Project>
-      <Name>ISI.Rtc.Util</Name>
+      <Name>UcmaKit.Rtc.Util</Name>
     </ProjectReference>
-    <ProjectReference Include="..\UcmaKit.Rtc\ISI.Rtc.csproj">
+    <ProjectReference Include="..\UcmaKit.Rtc\UcmaKit.Rtc.csproj">
       <Project>{8dd80684-381c-468b-96f1-1a6f6b1733b8}</Project>
-      <Name>ISI.Rtc</Name>
+      <Name>UcmaKit.Rtc</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Audio\Ring.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
