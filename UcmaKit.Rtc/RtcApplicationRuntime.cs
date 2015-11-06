@@ -11,7 +11,7 @@ namespace UcmaKit.Rtc
         /// <summary>
         /// Set of loaded applications.
         /// </summary>
-        List<RtcApplication> applications = new List<RtcApplication>();
+        readonly List<RtcApplication> applications = new List<RtcApplication>();
 
         /// <summary>
         /// Initializes a new instance.
