@@ -6,8 +6,8 @@
     <ProjectGuid>{3AE9BCEB-B059-4491-9606-F9EE9A8E9616}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ISI.Rtc.Acd.Tests</RootNamespace>
-    <AssemblyName>ISI.Rtc.Acd.Tests</AssemblyName>
+    <RootNamespace>UcmaKit.Rtc.Acd.Tests</RootNamespace>
+    <AssemblyName>UcmaKit.Rtc.Acd.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>

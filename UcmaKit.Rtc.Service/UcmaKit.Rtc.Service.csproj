@@ -7,8 +7,8 @@
     <ProjectGuid>{8177E927-5F4E-4D0E-AC1C-390D2980B3D3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ISI.Rtc.Service</RootNamespace>
-    <AssemblyName>ISI.Rtc.Service</AssemblyName>
+    <RootNamespace>UcmaKit.Rtc.Service</RootNamespace>
+    <AssemblyName>UcmaKit.Rtc.Service</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

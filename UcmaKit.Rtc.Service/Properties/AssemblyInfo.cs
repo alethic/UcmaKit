@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ISI.Rtc.Service")]
+[assembly: AssemblyTitle("UcmaKit.Rtc.Service")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ISI.Rtc.Service")]
+[assembly: AssemblyProduct("UcmaKit.Rtc.Service")]
 [assembly: AssemblyCopyright("Copyright © Institution Solutions 2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

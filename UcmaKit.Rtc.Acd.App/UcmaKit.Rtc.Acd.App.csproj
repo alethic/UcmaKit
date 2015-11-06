@@ -7,8 +7,8 @@
     <ProjectGuid>{C49E66BB-6EA3-4A14-973A-BFB218E2AEDA}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ISI.Rtc.Acd.App</RootNamespace>
-    <AssemblyName>ISI.Rtc.Acd.App</AssemblyName>
+    <RootNamespace>UcmaKit.Rtc.Acd.App</RootNamespace>
+    <AssemblyName>UcmaKit.Rtc.Acd.App</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>

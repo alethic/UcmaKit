@@ -12,8 +12,8 @@
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>ISI.Rtc.VoiceXml.SqlServer</RootNamespace>
-    <AssemblyName>ISI.Rtc.VoiceXml.SqlServer</AssemblyName>
+    <RootNamespace>UcmaKit.Rtc.VoiceXml.SqlServer</RootNamespace>
+    <AssemblyName>UcmaKit.Rtc.VoiceXml.SqlServer</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>

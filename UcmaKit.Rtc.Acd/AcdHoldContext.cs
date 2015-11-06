@@ -27,12 +27,12 @@ namespace UcmaKit.Rtc.Acd
         static AcdHoldContext()
         {
             // load standard Lync hold audio
-            using (var wma = Assembly.GetExecutingAssembly().GetManifestResourceStream("ISI.Rtc.Acd.Audio.Lync.wma"))
+            using (var wma = Assembly.GetExecutingAssembly().GetManifestResourceStream("UcmaKit.Rtc.Acd.Audio.Lync.wma"))
             using (var stm = File.OpenWrite(LYNC_FILE_NAME))
                 wma.CopyTo(stm);
 
             // load standard ring tone audio
-            using (var wav = Assembly.GetExecutingAssembly().GetManifestResourceStream("ISI.Rtc.Acd.Audio.Ring.wav"))
+            using (var wav = Assembly.GetExecutingAssembly().GetManifestResourceStream("UcmaKit.Rtc.Acd.Audio.Ring.wav"))
             using (var stm = File.OpenWrite(RING_FILE_NAME))
                 wav.CopyTo(stm);
         }

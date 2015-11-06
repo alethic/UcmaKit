@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ISI.Rtc.VoiceXml.App")]
+[assembly: AssemblyTitle("UcmaKit.Rtc.VoiceXml.App")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ISI.Rtc.VoiceXml.App")]
+[assembly: AssemblyProduct("UcmaKit.Rtc.VoiceXml.App")]
 [assembly: AssemblyCopyright("Copyright © Institution Solutions 2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

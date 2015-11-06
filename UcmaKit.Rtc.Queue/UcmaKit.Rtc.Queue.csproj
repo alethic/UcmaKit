@@ -7,8 +7,8 @@
     <ProjectGuid>{D61D67EE-5CE2-46A3-8EE7-61805474CD1A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ISI.Rtc.Queue</RootNamespace>
-    <AssemblyName>ISI.Rtc.Queue</AssemblyName>
+    <RootNamespace>UcmaKit.Rtc.Queue</RootNamespace>
+    <AssemblyName>UcmaKit.Rtc.Queue</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>

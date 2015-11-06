@@ -7,8 +7,8 @@
     <ProjectGuid>{105BC605-86C2-463F-AFE3-A68E601DA292}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ISI.Rtc.Acd.Service</RootNamespace>
-    <AssemblyName>ISI.Rtc.Acd.Service</AssemblyName>
+    <RootNamespace>UcmaKit.Rtc.Acd.Service</RootNamespace>
+    <AssemblyName>UcmaKit.Rtc.Acd.Service</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>

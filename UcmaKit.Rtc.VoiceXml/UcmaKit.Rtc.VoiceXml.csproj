@@ -7,8 +7,8 @@
     <ProjectGuid>{8151D34D-9C6C-4541-91B5-820C23EF9D2F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ISI.Rtc.VoiceXml</RootNamespace>
-    <AssemblyName>ISI.Rtc.VoiceXml</AssemblyName>
+    <RootNamespace>UcmaKit.Rtc.VoiceXml</RootNamespace>
+    <AssemblyName>UcmaKit.Rtc.VoiceXml</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>

@@ -12,8 +12,8 @@
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>ISI.Rtc.Queue.SqlServer</RootNamespace>
-    <AssemblyName>ISI.Rtc.Queue.SqlServer</AssemblyName>
+    <RootNamespace>UcmaKit.Rtc.Queue.SqlServer</RootNamespace>
+    <AssemblyName>UcmaKit.Rtc.Queue.SqlServer</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>

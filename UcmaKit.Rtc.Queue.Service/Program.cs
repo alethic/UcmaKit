@@ -18,7 +18,7 @@ namespace UcmaKit.Rtc.Queue.Service
                     s.WhenStarted(h => Task.Run(async () => await h.Start()).Wait());
                     s.WhenStopped(h => Task.Run(async () => await h.Shutdown()).Wait());
                 });
-                x.SetServiceName("ISI.Rtc.Queue");
+                x.SetServiceName("UcmaKit.Rtc.Queue");
                 x.RunAsNetworkService();
             });
         }
