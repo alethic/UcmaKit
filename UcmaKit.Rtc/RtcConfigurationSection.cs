@@ -11,7 +11,7 @@ namespace UcmaKit.Rtc
         /// <summary>
         /// Default section name for ISI RTC platform.
         /// </summary>
-        const string DEFAULT_SECTION_NAME = "UcmaKit.Rtc";
+        const string DEFAULT_SECTION_NAME = "ucmakit.rtc";
 
         /// <summary>
         /// Gets the specified platform configuration section.

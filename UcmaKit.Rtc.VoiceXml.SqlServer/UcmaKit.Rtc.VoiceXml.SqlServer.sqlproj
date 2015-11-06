@@ -68,9 +68,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="localhost.publish.xml" />
-    <None Include="datura.publish.xml" />
   </ItemGroup>
   <ItemGroup>
-    <RefactorLog Include="ISI.Rtc.VoiceXml.SqlServer.refactorlog" />
+    <RefactorLog Include="UcmaKit.Rtc.VoiceXml.SqlServer.refactorlog" />
   </ItemGroup>
 </Project>
