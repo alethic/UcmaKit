@@ -73,7 +73,6 @@ namespace UcmaKit.Rtc.Service
                     break;
                 case ExceptionSeverityLevel.Fatal:
                     EventLog.WriteEntry(args.Exception.ToString(), EventLogEntryType.FailureAudit);
-                    //Stop();
                     break;
             }
         }
