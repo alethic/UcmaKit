@@ -2,7 +2,7 @@
 
 using Microsoft.Rtc.Collaboration;
 
-namespace ISI.Rtc.Util
+namespace UcmaKit.Rtc.Util
 {
 
     public static class CollaborationPlatformExtensions

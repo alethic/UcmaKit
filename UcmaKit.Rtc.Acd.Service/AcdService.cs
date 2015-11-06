@@ -1,8 +1,8 @@
 ﻿using System.ServiceProcess;
 
-using ISI.Rtc.Service;
+using UcmaKit.Rtc.Service;
 
-namespace ISI.Rtc.Acd.Service
+namespace UcmaKit.Rtc.Acd.Service
 {
 
     public partial class AcdService : RtcService

@@ -2,7 +2,7 @@
 using System.ServiceProcess;
 using System.Threading;
 
-namespace ISI.Rtc.Service
+namespace UcmaKit.Rtc.Service
 {
 
     public abstract class RtcService : ServiceBase

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Rtc.Collaboration;
 
-namespace ISI.Rtc
+namespace UcmaKit.Rtc
 {
 
     public class RtcApplicationEndpointCollection : IEnumerable<ApplicationEndpoint>

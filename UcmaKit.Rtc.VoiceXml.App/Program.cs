@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ISI.Rtc.VoiceXml.App
+namespace UcmaKit.Rtc.VoiceXml.App
 {
 
     class Program
@@ -8,7 +8,7 @@ namespace ISI.Rtc.VoiceXml.App
 
         static void Main(string[] args)
         {
-            using (var p = new ISI.Rtc.RtcApplicationRuntime())
+            using (var p = new UcmaKit.Rtc.RtcApplicationRuntime())
             {
                 p.UnhandledException += p_UnhandledException;
                 p.Start().Wait();

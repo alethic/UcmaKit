@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 using Microsoft.Rtc.Collaboration;
 using Microsoft.Rtc.Collaboration.AudioVideo;
 
-using ISI.Rtc.Util;
+using UcmaKit.Rtc.Util;
 
-namespace ISI.Rtc.Acd
+namespace UcmaKit.Rtc.Acd
 {
 
     /// <summary>

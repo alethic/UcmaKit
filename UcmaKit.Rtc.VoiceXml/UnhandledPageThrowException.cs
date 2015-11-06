@@ -2,7 +2,7 @@
 
 using Microsoft.Speech.VoiceXml.Common;
 
-namespace ISI.Rtc.VoiceXml
+namespace UcmaKit.Rtc.VoiceXml
 {
 
     public class UnhandledPageThrowException : Exception

@@ -1,4 +1,4 @@
-﻿namespace ISI.Rtc
+﻿namespace UcmaKit.Rtc
 {
 
     public enum RtcApplicationState

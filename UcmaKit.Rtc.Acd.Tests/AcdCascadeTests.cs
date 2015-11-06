@@ -2,7 +2,7 @@
 using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace ISI.Rtc.Acd.Tests
+namespace UcmaKit.Rtc.Acd.Tests
 {
 
     [TestClass]

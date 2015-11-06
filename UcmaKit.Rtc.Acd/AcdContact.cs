@@ -1,4 +1,4 @@
-﻿namespace ISI.Rtc.Acd
+﻿namespace UcmaKit.Rtc.Acd
 {
 
     /// <summary>

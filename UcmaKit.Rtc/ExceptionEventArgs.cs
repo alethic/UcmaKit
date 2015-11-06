@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ISI.Rtc
+namespace UcmaKit.Rtc
 {
 
     public class ExceptionEventArgs : EventArgs

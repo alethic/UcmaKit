@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace ISI.Rtc.Util
+namespace UcmaKit.Rtc.Util
 {
 
     public static class TaskUtil

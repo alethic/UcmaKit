@@ -3,11 +3,11 @@ using System.Collections.Concurrent;
 using Microsoft.Rtc.Collaboration;
 using Microsoft.Rtc.Collaboration.AudioVideo;
 
-namespace ISI.Rtc.Queue
+namespace UcmaKit.Rtc.Queue
 {
 
     public class QueueApplication :
-        ISI.Rtc.RtcApplication
+        UcmaKit.Rtc.RtcApplication
     {
 
         readonly Lazy<QueueHoldConference> conference;

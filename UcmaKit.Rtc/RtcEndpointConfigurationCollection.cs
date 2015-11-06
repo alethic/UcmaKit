@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Configuration;
 
-namespace ISI.Rtc
+namespace UcmaKit.Rtc
 {
 
     [ConfigurationCollection(typeof(RtcEndpointConfigurationElement))]

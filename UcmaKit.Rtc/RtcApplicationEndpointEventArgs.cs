@@ -2,7 +2,7 @@
 
 using Microsoft.Rtc.Collaboration;
 
-namespace ISI.Rtc
+namespace UcmaKit.Rtc
 {
 
     public class RtcApplicationEndpointEventArgs : EventArgs

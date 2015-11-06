@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 
-using ISI.Rtc.Util;
+using UcmaKit.Rtc.Util;
 
-namespace ISI.Rtc.Acd
+namespace UcmaKit.Rtc.Acd
 {
 
     /// <summary>

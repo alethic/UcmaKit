@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.ServiceProcess;
 
-namespace ISI.Rtc.VoiceXml.Service
+namespace UcmaKit.Rtc.VoiceXml.Service
 {
 
     [RunInstaller(true)]

@@ -7,7 +7,7 @@ using Microsoft.Rtc.Collaboration;
 using Microsoft.Rtc.Collaboration.AudioVideo;
 using Microsoft.Rtc.Collaboration.Presence;
 
-namespace ISI.Rtc.Acd
+namespace UcmaKit.Rtc.Acd
 {
 
     /// <summary>

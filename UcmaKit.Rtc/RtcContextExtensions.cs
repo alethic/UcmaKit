@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 using Microsoft.Rtc.Collaboration;
 
-using ISI.Rtc.Util;
+using UcmaKit.Rtc.Util;
 
-namespace ISI.Rtc
+namespace UcmaKit.Rtc
 {
 
     public static class RtcContextExtensions

@@ -3,7 +3,7 @@
 using Microsoft.Rtc.Collaboration;
 using Microsoft.Rtc.Collaboration.ConferenceManagement;
 
-namespace ISI.Rtc.Util
+namespace UcmaKit.Rtc.Util
 {
 
     public static class ConferenceServicesExtensions

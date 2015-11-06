@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Configuration;
 
-namespace ISI.Rtc
+namespace UcmaKit.Rtc
 {
 
     public class RtcConfigurationSection : ConfigurationSection

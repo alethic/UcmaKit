@@ -1,6 +1,6 @@
 ﻿using System.Configuration;
 
-namespace ISI.Rtc
+namespace UcmaKit.Rtc
 {
 
     public class RtcEndpointConfigurationElement : ConfigurationElement

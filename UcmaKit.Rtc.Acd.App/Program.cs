@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ISI.Rtc.Acd.App
+namespace UcmaKit.Rtc.Acd.App
 {
 
     class Program
@@ -8,7 +8,7 @@ namespace ISI.Rtc.Acd.App
 
         static void Main(string[] args)
         {
-            using (var p = new ISI.Rtc.RtcApplicationRuntime())
+            using (var p = new UcmaKit.Rtc.RtcApplicationRuntime())
             {
                 p.UnhandledException += p_UnhandledException;
                 p.Start().Wait();

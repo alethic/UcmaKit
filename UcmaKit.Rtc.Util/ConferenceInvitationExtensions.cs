@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Rtc.Collaboration;
 
-namespace ISI.Rtc.Util
+namespace UcmaKit.Rtc.Util
 {
 
     public static class ConferenceInvitationExtensions

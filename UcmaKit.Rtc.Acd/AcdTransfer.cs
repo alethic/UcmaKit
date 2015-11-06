@@ -9,11 +9,11 @@ using Microsoft.Rtc.Signaling;
 
 using Nito.AsyncEx;
 
-using ISI.Rtc.Util;
+using UcmaKit.Rtc.Util;
 using System.Net.Mime;
 using System.Text;
 
-namespace ISI.Rtc.Acd
+namespace UcmaKit.Rtc.Acd
 {
 
     /// <summary>

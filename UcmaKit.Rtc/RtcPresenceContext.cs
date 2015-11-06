@@ -9,9 +9,9 @@ using Microsoft.Rtc.Collaboration.Presence;
 
 using Nito.AsyncEx;
 
-using ISI.Rtc.Util;
+using UcmaKit.Rtc.Util;
 
-namespace ISI.Rtc
+namespace UcmaKit.Rtc
 {
 
     /// <summary>

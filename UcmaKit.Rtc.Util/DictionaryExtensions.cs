@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ISI.Rtc.Util
+namespace UcmaKit.Rtc.Util
 {
 
     public static class DictionaryExtensions

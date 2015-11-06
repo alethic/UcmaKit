@@ -1,4 +1,4 @@
-﻿namespace ISI.Rtc.VoiceXml.Service
+﻿namespace UcmaKit.Rtc.VoiceXml.Service
 {
     partial class VoiceXmlService
     {

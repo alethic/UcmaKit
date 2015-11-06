@@ -13,13 +13,13 @@ using Microsoft.Speech.VoiceXml.Common;
 
 using Nito.AsyncEx;
 
-using ISI.Rtc.Util;
-using ISI.Rtc.VoiceXml.Data;
+using UcmaKit.Rtc.Util;
+using UcmaKit.Rtc.VoiceXml.Data;
 
-namespace ISI.Rtc.VoiceXml
+namespace UcmaKit.Rtc.VoiceXml
 {
 
-    public class VoiceXmlApplication : ISI.Rtc.RtcApplication
+    public class VoiceXmlApplication : UcmaKit.Rtc.RtcApplication
     {
 
         Timer timer;

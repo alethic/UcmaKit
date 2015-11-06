@@ -5,7 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Xml;
 
-namespace ISI.Rtc
+namespace UcmaKit.Rtc
 {
 
     public class RtcApplicationConfigurationElement : ConfigurationElement

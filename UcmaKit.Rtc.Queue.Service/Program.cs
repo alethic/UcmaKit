@@ -2,7 +2,7 @@
 
 using Topshelf;
 
-namespace ISI.Rtc.Queue.Service
+namespace UcmaKit.Rtc.Queue.Service
 {
 
     public class Program

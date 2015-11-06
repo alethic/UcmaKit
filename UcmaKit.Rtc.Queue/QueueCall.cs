@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-using ISI.Rtc.Util;
+using UcmaKit.Rtc.Util;
 
 using Microsoft.Rtc.Collaboration;
 using Microsoft.Rtc.Collaboration.AudioVideo;
 
-namespace ISI.Rtc.Queue
+namespace UcmaKit.Rtc.Queue
 {
 
     public class QueueCall

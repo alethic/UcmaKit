@@ -1,13 +1,13 @@
 ﻿using System.Threading.Tasks;
 
-using ISI.Rtc.Util;
+using UcmaKit.Rtc.Util;
 
 using Microsoft.Rtc.Collaboration;
 using Microsoft.Rtc.Collaboration.AudioVideo;
 using Microsoft.Rtc.Signaling;
 using Nito.AsyncEx;
 
-namespace ISI.Rtc.Queue
+namespace UcmaKit.Rtc.Queue
 {
 
     public class QueueAgentConference

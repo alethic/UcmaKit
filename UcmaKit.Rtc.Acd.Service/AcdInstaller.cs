@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.ServiceProcess;
 
-namespace ISI.Rtc.Acd.Service
+namespace UcmaKit.Rtc.Acd.Service
 {
 
     [RunInstaller(true)]

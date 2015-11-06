@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ISI.Rtc.VoiceXml.Data
+namespace UcmaKit.Rtc.VoiceXml.Data
 {
     using System;
     using System.Data.Entity;

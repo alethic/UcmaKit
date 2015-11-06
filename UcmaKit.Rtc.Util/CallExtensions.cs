@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.Rtc.Collaboration;
 using Microsoft.Rtc.Signaling;
 
-namespace ISI.Rtc.Util
+namespace UcmaKit.Rtc.Util
 {
 
     public static class CallExtensions

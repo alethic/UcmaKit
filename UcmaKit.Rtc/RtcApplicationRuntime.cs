@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace ISI.Rtc
+namespace UcmaKit.Rtc
 {
 
     public sealed class RtcApplicationRuntime : IDisposable

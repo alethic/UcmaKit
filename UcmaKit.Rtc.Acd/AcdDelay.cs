@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.Rtc.Collaboration;
 using Microsoft.Rtc.Collaboration.AudioVideo;
 
-namespace ISI.Rtc.Acd
+namespace UcmaKit.Rtc.Acd
 {
 
     /// <summary>

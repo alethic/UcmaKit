@@ -1,8 +1,8 @@
 ﻿using System.ServiceProcess;
 
-using ISI.Rtc.Service;
+using UcmaKit.Rtc.Service;
 
-namespace ISI.Rtc.VoiceXml.Service
+namespace UcmaKit.Rtc.VoiceXml.Service
 {
 
     public partial class VoiceXmlService : RtcService

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 using Nito.AsyncEx;
 
-namespace ISI.Rtc.Util
+namespace UcmaKit.Rtc.Util
 {
 
     /// <summary>

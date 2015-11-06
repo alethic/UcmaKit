@@ -1,4 +1,4 @@
-﻿namespace ISI.Rtc.Acd.Service
+﻿namespace UcmaKit.Rtc.Acd.Service
 {
     partial class AcdService
     {
