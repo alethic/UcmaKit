@@ -27,6 +27,15 @@ namespace UcmaKit.Rtc.Util
                 null);
         }
 
+        public static Task<SipResponseData> EstablishAsync(this ApplicationEndpoint self, params SignalingHeader[] additionalHeaders)
+        {
+            return Task.Factory.FromAsync<IEnumerable<SignalingHeader>, SipResponseData>(
+                self.BeginEstablish,
+                self.EndEstablish,
+                additionalHeaders,
+                null);
+        }
+
         public static Task TerminateAsync(this ApplicationEndpoint self)
         {
             return Task.Factory.FromAsync(

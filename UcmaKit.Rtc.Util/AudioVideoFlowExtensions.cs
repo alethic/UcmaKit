@@ -29,6 +29,16 @@ namespace UcmaKit.Rtc.Util
                 null);
         }
 
+        public static Task HoldAsync(this AudioVideoFlow self, HoldType holdType, params SignalingHeader[] headers)
+        {
+            return Task.Factory.FromAsync<HoldType, IEnumerable<SignalingHeader>>(
+                self.BeginHold,
+                self.EndHold,
+                holdType,
+                headers,
+                null);
+        }
+
         public static Task RetrieveAsync(this AudioVideoFlow self)
         {
             return Task.Factory.FromAsync(
@@ -38,6 +48,15 @@ namespace UcmaKit.Rtc.Util
         }
 
         public static Task RetrieveAsync(this AudioVideoFlow self, IEnumerable<SignalingHeader> headers)
+        {
+            return Task.Factory.FromAsync<IEnumerable<SignalingHeader>>(
+                self.BeginRetrieve,
+                self.EndRetrieve,
+                headers,
+                null);
+        }
+
+        public static Task RetrieveAsync(this AudioVideoFlow self, params SignalingHeader[] headers)
         {
             return Task.Factory.FromAsync<IEnumerable<SignalingHeader>>(
                 self.BeginRetrieve,
